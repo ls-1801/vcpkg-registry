@@ -4,7 +4,6 @@ endif()
 if(VCPKG_TARGET_IS_OSX AND ("framework" IN_LIST FEATURES))
     vcpkg_check_linkage(ONLY_DYNAMIC_LIBRARY)
 endif()
-vcpkg_find_acquire_program(NUGET)
 
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
@@ -110,7 +109,6 @@ vcpkg_cmake_configure(
     OPTIONS
         ${ARCH_OPTIONS}
         ${FEATURE_OPTIONS}
-        -DNUGET_EXE:FILEPATH:=${NUGET}
         -DPython_EXECUTABLE:FILEPATH=${PYTHON3}
         -DProtobuf_PROTOC_EXECUTABLE:FILEPATH=${PROTOC}
         # -DProtobuf_USE_STATIC_LIBS=OFF
@@ -137,7 +135,6 @@ vcpkg_cmake_configure(
         -Donnxruntime_ENABLE_CUDA_PROFILING=ON
         -Donnxruntime_DEBUG_NODE_INPUTS_OUTPUTS=ON
     MAYBE_UNUSED_VARIABLES
-        NUGET_EXE
         onnxruntime_BUILD_WEBASSEMBLY
         onnxruntime_TENSORRT_PLACEHOLDER_BUILDER
         onnxruntime_USE_CUSTOM_DIRECTML
