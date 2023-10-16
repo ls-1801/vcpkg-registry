@@ -3,7 +3,7 @@
   "version-semver": "1.16.0",
   "description": "ONNX Runtime: cross-platform, high performance ML inferencing and training accelerator",
   "homepage": "https://www.onnxruntime.ai",
-  "port-version": 2,
+  "port-version": 3,
   "dependencies": [
     "boost-config",
     "boost-mp11",

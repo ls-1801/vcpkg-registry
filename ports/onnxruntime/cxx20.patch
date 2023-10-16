@@ -8,5 +8,5 @@ index 2aef9dcf20..e3ea767401 100644
  #cmakedefine HAS_USELESS_CAST
 -#cmakedefine ORT_BUILD_INFO u8"@ORT_BUILD_INFO@"
 -#cmakedefine ORT_VERSION u8"@ORT_VERSION@"
-+#cmakedefine ORT_BUILD_INFO "@ORT_BUILD_INFO@"
++#cmakedefine ORT_BUILD_INFO "NO_BUILD_INFO"
 +#cmakedefine ORT_VERSION "@ORT_VERSION@"
