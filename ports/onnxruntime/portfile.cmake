@@ -13,6 +13,7 @@ vcpkg_from_github(
     PATCHES
         fix-cmake.patch
         fix-source-flatbuffers.patch
+        cxx20.patch
 )
 
 find_program(PROTOC NAMES protoc
